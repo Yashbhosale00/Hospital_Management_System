@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hospiBlue">#034c81</color>
+    <color name="whatsupcolor">#075e54</color>
+    <color name="lightGrey">#FBF9F9</color>
+    <color name="Darkgrey">#DFDEDE</color>
+    <color name="lightblue">#ebf5fb</color>
+    <color name="greenmagic">#bec9b8</color>
+    <color name="watercolor">#EBF5FB</color>
+    <color name="Redcolor">#FF0000</color>
+</resources>

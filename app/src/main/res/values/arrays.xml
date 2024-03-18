@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_types">
+        <item>Select Role</item>
+        <item>Master Admin</item>
+        <item>Admin</item>
+        <item>Staff</item>
+    </string-array>
+
+    <string-array name="select_role">
+        <item>Admin</item>
+        <item>Nurse</item>
+        <item>Ward-Boy</item>
+        <item>Technician</item>
+    </string-array>
+
+    <string-array name="pan_card">
+        <item>Choose From Gallery</item>
+    </string-array>
+
+    <string-array name="Certificate_One">
+        <item>Choose From Gallery</item>
+    </string-array>
+
+    <string-array name="Certificate_Two">
+        <item>Choose From Gallery</item>
+    </string-array>
+
+    <string-array name="Certificate_Three">
+        <item>Choose From Gallery</item>
+    </string-array>
+
+    <string-array name="Adhar_Card">
+        <item>Choose From Gallery</item>
+    </string-array>
+
+    <string-array name="Passport_Photo">
+        <item>Choose From Gallery</item>
+    </string-array>
+
+    <string-array name="Category">
+        <item>Tablet</item>
+        <item>Bandage</item>
+        <item>Syrup</item>
+    </string-array>
+
+    <string-array name="Suppllier">
+        <item>Saurav Bhilare</item>
+        <item>Yash Bhosale</item>
+        <item>Rutik Gahukar</item>
+        <item>Nirmal Vasande</item>
+    </string-array>
+
+    <string-array name="Attachement">
+        <item>Choose From Gallery</item>
+    </string-array>
+
+    <string-array name="Paymentstatus">
+        <item>Unpaid</item>
+        <item>Partial-Paid</item>
+        <item>Paid</item>
+    </string-array>
+
+    <string-array name="test">
+        <item>Blood</item>
+        <item>Covid</item>
+    </string-array>
+
+    <string-array name="MedicineName">
+        <item>Cenarest</item>
+        <item>Dolo</item>
+        <item>999</item>
+    </string-array>
+
+</resources>

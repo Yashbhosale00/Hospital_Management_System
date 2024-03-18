@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/RegisterdAdminn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16sp"
+        android:paddingLeft="16sp"
+        android:paddingTop="4dp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/thik_corner">
+        <ImageView
+            android:id="@+id/dummyDoctorThree"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/dummydoctor"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profile Icon"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/RegistedAdminNamen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr.Nirmal Shinde"
+                android:textSize="11sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/AdminProfesiondoctorOnen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textSize="12sp"
+                android:textColor="@color/whatsupcolor"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

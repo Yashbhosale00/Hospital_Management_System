@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Bill.BillEntryeExpenseAdd">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_background"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/BillentryBackimageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/previous"
+            android:layout_marginStart="16sp"
+            app:tint="@color/whatsupcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/Test"
+            android:layout_height="wrap_content"
+            android:text=" Add Bill Entry"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/whatsupcolor"
+            android:layout_marginLeft="15dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/bill"
+                                app:tint="@color/whatsupcolor" />
+                            <TextView
+                                android:id="@+id/listText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:textColor="@color/whatsupcolor"
+                                android:layout_marginLeft="7dp"
+                                android:text="Bill Entry"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="8dp"
+                                android:padding="8dp">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/Bill"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Enter Bill/Reference No."
+                                        android:inputType="text" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/BillDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Pick Date DD/MM/YYY"
+                                        android:inputType="text" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/Title"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Title"
+                                        android:inputType="text" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginTop="3dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_margin="5dp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content"
+                                        android:text="Category"/>
+
+                                    <Spinner
+                                        android:id="@+id/c1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:padding="6dp" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginTop="3dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_margin="5dp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content"
+                                        android:text="Supplier"/>
+
+                                    <Spinner
+                                        android:id="@+id/c2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:padding="6dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginTop="3dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_margin="5dp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content"
+                                        android:text="Attachment"/>
+
+                                    <Spinner
+                                        android:id="@+id/c3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:padding="6dp" />
+                                </LinearLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/healthIssueEditText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Description"
+                                        android:inputType="text"
+                                        android:focusable="false"
+                                        android:onClick="showDatePicker" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/nextButton1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/button_background"
+                    android:text="NEXT"
+                    android:onClick="nextPage"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginBottom="5dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/paa">
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Paments Details"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="8dp"
+                                android:padding="8dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:layout_marginTop="3dp"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_weight="1"
+                                        android:layout_margin="5dp"
+                                        android:textColor="@color/black"
+                                        android:textStyle="bold"
+                                        android:layout_height="wrap_content"
+                                        android:text="Payments Status:-"/>
+
+                                    <Spinner
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="5dp"
+                                        android:layout_weight="1"
+                                        android:padding="6dp" />
+                                </LinearLayout>
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Payment Amount"
+                                        android:inputType="text"
+                                        android:onClick="showDatePicker" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Paid Amount"
+                                        android:inputType="text"
+                                        android:focusable="false"
+                                        android:onClick="showDatePicker" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Balance Amount"
+                                        android:inputType="text"
+                                        android:focusable="false"
+                                        android:onClick="showDatePicker" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Description"
+                                        android:inputType="text"
+                                        android:focusable="false"
+                                        android:onClick="showDatePicker" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/nextButton2"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:text="CREATE"
+                    android:background="@drawable/button_background"
+                    android:onClick="nextPage"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

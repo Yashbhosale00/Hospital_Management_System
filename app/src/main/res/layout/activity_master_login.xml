@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".masteradmin.MasterLoginActivity">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="16sp"
+        android:paddingLeft="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/profile_background">
+        <ImageView
+            android:id="@+id/Logoutarrowback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/previous"
+            app:tint="@color/whatsupcolor" />
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/profile"
+            android:contentDescription="Profile Icon"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dr.John Doe"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/genderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Master Admin"
+                android:textSize="12sp"
+                android:textColor="@color/whatsupcolor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LogoutButton"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:padding="10dp"
+        android:text="LogOut"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>

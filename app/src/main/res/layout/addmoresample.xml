@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".expense.UsersFragment">
+
+    <LinearLayout
+        android:id="@+id/AddRoleOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="9dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/profile_background">
+
+            <TextView
+                android:id="@+id/AddStaffRole"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:text="Add Staff Role" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/AddStaffRoleButton"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_background"
+                android:layout_gravity="center"
+                android:text="ADD"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

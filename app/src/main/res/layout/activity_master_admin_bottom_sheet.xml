@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main"
+    tools:context=".masteradmin.MasterAdmin_BottomSheet">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_background"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="16sp"
+        android:paddingLeft="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <ImageView
+            android:id="@+id/BackArrowInformationForm"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/previous"
+            android:layout_marginStart="16sp"
+            app:tint="@color/whatsupcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/InformationForm"
+            android:layout_height="wrap_content"
+            android:text="Master Admin Registration"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/whatsupcolor"
+            android:layout_marginLeft="15dp"/>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:backgroundTint="@color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/user"
+                            app:tint="@color/whatsupcolor" />
+                        <TextView
+                            android:id="@+id/listText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:textColor="@color/whatsupcolor"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="7dp"
+                            android:text="Personal Information"
+                            android:textSize="22dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/fname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="First Name"
+                                        android:inputType="text" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="3dp"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="160dp"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/mname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Middle Name"
+                                        android:inputType="text" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/lname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Last Name"
+                                        android:inputType="text" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="3dp"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/Phonee"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Mobile Number"
+                                        android:inputType="number" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="3dp"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/Alterffff"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Gmail"
+                                        android:inputType="text" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="3dp"
+                                android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/Address"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Address"
+                                        android:inputType="text" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/black"
+                                    android:text="Select Gender" />
+
+                                <RadioGroup
+                                    android:id="@+id/radioSex"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radioMale"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:checked="true"
+                                        android:text="Male" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioFemale"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Female" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/nextButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:padding="10dp"
+                        android:text="Next"
+                        android:background="@drawable/button_background"
+                        android:onClick="nextPage"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="@color/white"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/security"
+                                android:tint="@color/whatsupcolor"
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:padding="8dp"
+                                android:text="Account Details"
+                                android:textColor="@color/whatsupcolor"
+                                android:gravity="center"
+                                android:layout_marginLeft="7dp"
+                                android:textStyle="bold"
+                                android:textSize="22dp" />
+
+
+                            <LinearLayout
+                                android:id="@+id/linearLayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="8dp"
+                                android:padding="8dp">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="text"
+                                        android:hint="Username" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="numberPassword"
+                                        android:hint="Password" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="numberPassword"
+                                        android:hint="Confirm Password" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/previousButton2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="PREVIOUS"
+                        android:onClick="previousPage"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/button_background"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/nextButton2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="SUBMIT"
+                        android:background="@drawable/button_background"
+                        android:onClick="nextPage"
+                        android:layout_marginLeft="45dp"
+                        android:layout_gravity="right"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

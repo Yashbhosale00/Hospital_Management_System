@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/textViewBillDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bill No"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewBillNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+              android:paddingRight="5dp"
+                android:gravity="end"
+
+                android:text="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/ViewBillDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Bill Date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="5dp"
+                android:text="01-03-2024" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/Category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Category"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Medicine"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:text="Medicine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/SuppilerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Suppiler Name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/SuppilerNameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="5dp"
+                android:text="Surav Bhilare" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/Status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Status"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Statustittle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="UnPaid"
+                android:paddingRight="5dp"
+                android:textColor="@color/Redcolor"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/Amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Amounttittle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:text="2000.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/Paid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Paid"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Paidtittle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:gravity="end"
+                android:text="2000.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/Balance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Balance"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Balancetittle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="5dp"
+                android:text="0.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/DeleteButton"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/PaysButton"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Pay"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

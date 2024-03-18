@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".expense.ViewHealthCareTeam">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_background"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:id="@+id/ViewAllBackArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/previous"
+            android:layout_marginStart="16sp"
+            app:tint="@color/whatsupcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/Test"
+            android:layout_height="wrap_content"
+            android:text="View Healthcare Team"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/whatsupcolor"
+            android:layout_marginLeft="15dp"/>
+        <ImageView
+            android:id="@+id/FilterImageViewAll"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/filter"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16sp"
+            app:tint="@color/whatsupcolor" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/healthCareRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white" />
+</LinearLayout>

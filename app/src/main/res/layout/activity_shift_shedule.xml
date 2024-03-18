@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shiftSgedule.ShiftSheduleActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/watercolor"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+        <ImageView
+            android:id="@+id/ShiftsheduleimageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/previous"
+            android:layout_marginStart="16sp"
+            app:tint="@color/whatsupcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/Test"
+            android:layout_height="wrap_content"
+            android:text="Shift Schedule Form"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/whatsupcolor"
+            android:layout_marginLeft="15dp"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/shift">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/listText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:layout_marginLeft="7dp"
+                            android:text="Shift Schedule"
+                            android:textColor="@color/whatsupcolor"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_margin="8dp"
+                            android:padding="8dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="3dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="Staff"/>
+
+                                <Spinner
+                                    android:id="@+id/c1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:padding="6dp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="3dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="Role"/>
+
+                                <Spinner
+                                    android:id="@+id/c2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:padding="6dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="3dp">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="170dp"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/fromTimeEditText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="From Time"
+                                        android:inputType="text"
+                                        android:focusable="false"
+                                        android:onClick="showFromTimePicker" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/toTimeEditText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="To Time"
+                                        android:inputType="text"
+                                        android:focusable="false"
+                                        android:onClick="showToTimePicker" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_height="wrap_content">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/fname"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:hint="Pick The Date"
+                                        android:inputType="text" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="3dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="Shift Type"/>
+
+                                <Spinner
+                                    android:id="@+id/c3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:padding="6dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:layout_marginTop="3dp"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:layout_height="wrap_content"
+                                    android:text="Assign To Department"/>
+
+                                <Spinner
+                                    android:id="@+id/c4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:padding="6dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ShiftSheduleSubmit"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_background"
+                android:padding="10dp"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
